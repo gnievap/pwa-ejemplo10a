@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera PWA</title>
 
+    <!-- Opcional, para rutas relativas -->
+    <base href="pwa-ejemplo10a/"> 
+
     <!-- Vincular el manifest -->
     <link rel="manifest" href="pwa-ejemplo10a/manifest.json">
+
+     <!-- Icono para iOS -->
+    <link rel="apple-touch-icon" href="pwa-ejemplo10c/icons/icon-192x192.png">
 
     <!-- Color de la barra del navegador en móviles -->
     <meta name="theme-color" content="#2196f3">
@@ -16,6 +22,11 @@
     <p>Se puede instalar como aplicación en tu celular</p>
 
     <button onclick="alert('Hola desde la PWA')">Click aquí</button>
+
+    <ul>
+        <li><a href="pwa-ejemplo10a/index.html">Inicio</li>
+        <li><a href="pwa-ejemplo10a/login.html">Iniciar sesión</li>
+    </ul>
 
     <!-- Registrar el Service Worker -->
     <script>
